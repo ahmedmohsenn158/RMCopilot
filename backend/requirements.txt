@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-langgraph
-redis
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.32,<1.0
+langgraph>=0.2,<1.0
+redis>=5,<7
