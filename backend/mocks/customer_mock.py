@@ -1,4 +1,4 @@
-from infrastructure.data_access import events_for_customer, load_customers
+from backend.infrastructure.data_access import events_for_customer, load_customers
 
 
 def get_customer(customer_id: str) -> dict | None:

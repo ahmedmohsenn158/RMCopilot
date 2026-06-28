@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from infrastructure.data_access import load_events
+from backend.infrastructure.data_access import load_events
 
 router = APIRouter()
 

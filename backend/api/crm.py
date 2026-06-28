@@ -1,10 +1,8 @@
 from fastapi import APIRouter
 from pydantic import BaseModel, Field
-
-from infrastructure.audit_log import log_human_action
+from backend.infrastructure.audit_log import log_human_action
 
 router = APIRouter()
-
 
 class CRMUpdateRequest(BaseModel):
     customer_id: str = "cust_khaled_001"

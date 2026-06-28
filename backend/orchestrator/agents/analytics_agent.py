@@ -1,5 +1,5 @@
-from infrastructure.data_access import load_events
-from infrastructure.groq_client import chat_completion
+from backend.infrastructure.data_access import load_events
+from backend.infrastructure.groq_client import chat_completion
 
 
 async def analytics_agent(state: dict) -> dict:

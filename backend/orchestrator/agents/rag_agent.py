@@ -1,6 +1,6 @@
-from infrastructure.audit_log import log_ai_suggestion
-from infrastructure.groq_client import chat_completion, model_name
-from infrastructure.vector_store import search_knowledge_base
+from backend.infrastructure.audit_log import log_ai_suggestion
+from backend.infrastructure.groq_client import chat_completion, model_name
+from backend.infrastructure.vector_store import search_knowledge_base
 
 
 async def rag_agent(state: dict) -> dict:

@@ -1,7 +1,7 @@
 import json
 
-from infrastructure.groq_client import chat_completion
-from infrastructure.redis_client import get_recent_alerts
+from backend.infrastructure.groq_client import chat_completion
+from backend.infrastructure.redis_client import get_recent_alerts
 
 
 async def alert_agent(state: dict) -> dict:

@@ -1,8 +1,8 @@
 import json
 
-from infrastructure.groq_client import chat_completion
-from infrastructure.redis_client import get_recent_alerts
-from infrastructure.vector_store import search_knowledge_base
+from backend.infrastructure.groq_client import chat_completion
+from backend.infrastructure.redis_client import get_recent_alerts
+from backend.infrastructure.vector_store import search_knowledge_base
 
 
 async def recommendation_agent(state: dict) -> dict:

@@ -1,5 +1,5 @@
-from infrastructure.audit_log import log_ai_suggestion
-from infrastructure.groq_client import chat_completion, model_name
+from backend.infrastructure.audit_log import log_ai_suggestion
+from backend.infrastructure.groq_client import chat_completion, model_name
 
 
 async def drafting_agent(state: dict) -> dict:

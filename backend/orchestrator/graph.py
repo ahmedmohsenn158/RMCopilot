@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 """
 LangGraph orchestrator — routes messages to agents,
 returns structured {reply, proposed_actions} instead of plain text.
@@ -5,6 +6,17 @@ returns structured {reply, proposed_actions} instead of plain text.
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Literal
 from tools.base import ProposedAction
+=======
+from typing import Literal, TypedDict
+
+from backend.orchestrator.agents.alert_agent import alert_agent
+from backend.orchestrator.agents.analytics_agent import analytics_agent
+from backend.orchestrator.agents.anomaly_agent import anomaly_agent
+from backend.orchestrator.agents.chatbot_agent import chatbot_agent
+from backend.orchestrator.agents.drafting_agent import drafting_agent
+from backend.orchestrator.agents.rag_agent import rag_agent
+from backend.orchestrator.agents.rec_agent import recommendation_agent
+>>>>>>> Stashed changes
 
 
 class AgentState(TypedDict):

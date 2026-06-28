@@ -1,13 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.customers import router as customers_router
-from api.alerts    import router as alerts_router
-from api.chat      import router as chat_router
-from api.meetings  import router as meetings_router
-from api.crm       import router as crm_router
-from api.events    import router as events_router
-from api.emails    import router as emails_router
-from api.actions   import router as actions_router
+
+from backend.api.alerts import router as alerts_router
+from backend.api.chat import router as chat_router
+from backend.api.crm import router as crm_router
+from backend.api.customers import router as customers_router
+from backend.api.emails import router as emails_router
+from backend.api.events import router as events_router
+from backend.api.meetings import router as meetings_router
+from backend.api.actions   import router as actions_router
 
 app = FastAPI(title="RM Copilot API", version="0.2.0")
 

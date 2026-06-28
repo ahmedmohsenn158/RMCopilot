@@ -1,9 +1,7 @@
 from fastapi import APIRouter, HTTPException
-
-from mocks.customer_mock import get_customer, search_customers, to_active_customer, to_customer_search_item
+from backend.mocks.customer_mock import get_customer, search_customers, to_active_customer, to_customer_search_item
 
 router = APIRouter()
-
 
 @router.get("/")
 def list_customers(rm_id: str = "rm_sara_001", query: str = "") -> list[dict]:

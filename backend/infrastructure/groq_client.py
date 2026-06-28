@@ -1,15 +1,16 @@
 import os
 from pathlib import Path
-
 from dotenv import load_dotenv
+from groq import AsyncGroq
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-load_dotenv()
-load_dotenv(PROJECT_ROOT / ".env", override=True)
+load_dotenv(PROJECT_ROOT/"backend/.env", override=True)
 
 DEFAULT_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant").strip()
-
+print(PROJECT_ROOT)
+print(f"GROQ API KEY: {os.getenv("GROQ_API_KEY")}")
 
 import os
 print(f"[ENV CHECK] GMAIL_ADDRESS={os.getenv('GMAIL_ADDRESS', 'MISSING')}")
@@ -28,8 +29,6 @@ async def chat_completion(
     if not api_key:
         print("[Groq] GROQ_API_KEY is missing; using demo response.")
         return _offline_reply(system, user)
-
-    from groq import AsyncGroq
 
     client = AsyncGroq(api_key=api_key)
     try:

@@ -1,4 +1,4 @@
-from infrastructure.groq_client import chat_completion
+from backend.infrastructure.groq_client import chat_completion
 
 
 async def chatbot_agent(state: dict) -> dict:

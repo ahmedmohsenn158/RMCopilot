@@ -3,7 +3,6 @@ from tools.email_tool import execute_email
 
 router = APIRouter()
 
-
 @router.post("/send")
 async def send_email(payload: dict) -> dict:
     customer_id = payload.get("customer_id", "cust_khaled_001")

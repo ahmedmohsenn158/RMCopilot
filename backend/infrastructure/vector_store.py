@@ -1,8 +1,12 @@
 import json
 import re
+import faiss
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
 from pathlib import Path
 
-from infrastructure.data_access import PROJECT_ROOT
+from backend.infrastructure.data_access import PROJECT_ROOT
 
 KB_PATH = PROJECT_ROOT / "data" / "knowledge_base"
 VECTOR_STORE_PATH = Path(__file__).parent / "faiss_index"
@@ -18,10 +22,6 @@ def build_vector_store() -> int:
         return len(docs)
 
     try:
-        import faiss
-        import numpy as np
-        from sentence_transformers import SentenceTransformer
-
         model = SentenceTransformer("all-MiniLM-L6-v2")
         vectors = model.encode([doc["text"] for doc in docs], normalize_embeddings=True)
         index = faiss.IndexFlatIP(vectors.shape[1])
@@ -39,9 +39,6 @@ def search_knowledge_base(query: str, k: int = 3) -> list[dict]:
         return []
 
     try:
-        import faiss
-        import numpy as np
-        from sentence_transformers import SentenceTransformer
 
         index_path = VECTOR_STORE_PATH / "faiss.index"
         if index_path.exists() and _should_build_faiss_embeddings():

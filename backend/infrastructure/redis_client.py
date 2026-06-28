@@ -1,13 +1,11 @@
 import json
 import os
-
-from infrastructure.data_access import events_for_customer, load_events
+import redis
+from backend.infrastructure.data_access import events_for_customer, load_events
 
 
 def _redis_client():
     try:
-        import redis
-
         client = redis.from_url(os.getenv("REDIS_URL", "redis://localhost:6379"), decode_responses=True)
         client.ping()
         return client

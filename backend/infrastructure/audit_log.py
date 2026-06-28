@@ -5,7 +5,6 @@ from pathlib import Path
 
 LOG_PATH = Path(__file__).parent / "audit_log.jsonl"
 
-
 def log_ai_suggestion(
     rm_id: str,
     customer_id: str | None,

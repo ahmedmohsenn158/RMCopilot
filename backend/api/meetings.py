@@ -1,10 +1,8 @@
 from fastapi import APIRouter
-
-from infrastructure.data_access import load_events
-from mocks.customer_mock import get_customer
+from backend.infrastructure.data_access import load_events
+from backend.mocks.customer_mock import get_customer
 
 router = APIRouter()
-
 
 @router.get("/")
 def list_meetings(rm_id: str = "rm_sara_001") -> list[dict]:

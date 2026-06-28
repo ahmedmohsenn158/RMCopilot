@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from orchestrator.graph import run_agent
+from backend.orchestrator.graph import run_agent
 
 router = APIRouter()
 
