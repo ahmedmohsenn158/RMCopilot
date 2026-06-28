@@ -1,1 +1,208 @@
-[]
+[
+  {
+    "event_id": "evt_001",
+    "customer_id": "cust_khaled_001",
+    "event_type": "transaction",
+    "timestamp": "2026-06-27T14:07:00Z",
+    "amount": 120000,
+    "currency": "USD",
+    "direction": "debit",
+    "counterparty": "Unknown Supplier LLC",
+    "channel": "wire_transfer",
+    "metadata": {
+      "customer_90d_avg_usd_txn": 6500,
+      "deviation_multiplier": 18.5
+    }
+  },
+  {
+    "event_id": "evt_002",
+    "customer_id": "cust_khaled_001",
+    "event_type": "credit_limit_breach",
+    "timestamp": "2026-06-27T14:09:00Z",
+    "utilisation_pct": 105,
+    "limit_egp": 800000,
+    "balance_egp": 842000
+  },
+  {
+    "event_id": "evt_003",
+    "customer_id": "cust_khaled_001",
+    "event_type": "product_expiry",
+    "timestamp": "2026-06-27T00:00:00Z",
+    "product": "trade_finance_facility",
+    "expiry_date": "2026-07-25",
+    "days_remaining": 28,
+    "renewal_initiated": false
+  },
+  {
+    "event_id": "evt_004",
+    "customer_id": "cust_khaled_001",
+    "event_type": "cross_sell_signal",
+    "timestamp": "2026-06-24T10:30:00Z",
+    "signal": "3 large USD inflows detected",
+    "recommended_product": "fx_forward_contract"
+  },
+  {
+    "event_id": "evt_005",
+    "customer_id": "cust_khaled_001",
+    "event_type": "meeting_scheduled",
+    "timestamp": "2026-06-27T10:00:00Z",
+    "topic": "Credit line renewal",
+    "meeting_time": "10:00 AM"
+  },
+  {
+    "event_id": "evt_006",
+    "customer_id": "cust_khaled_001",
+    "event_type": "crm_action_item",
+    "timestamp": "2026-06-26T09:00:00Z",
+    "action": "Send FX hedging sheet",
+    "due_date": "2026-06-29"
+  },
+  {
+    "event_id": "evt_007",
+    "customer_id": "cust_nour_002",
+    "event_type": "transaction",
+    "timestamp": "2026-06-26T12:20:00Z",
+    "amount": 19000,
+    "currency": "EGP",
+    "direction": "debit",
+    "counterparty": "Cairo Utilities",
+    "channel": "online_banking",
+    "metadata": {
+      "deviation_multiplier": 0.8
+    }
+  },
+  {
+    "event_id": "evt_008",
+    "customer_id": "cust_nour_002",
+    "event_type": "meeting_scheduled",
+    "timestamp": "2026-06-27T14:30:00Z",
+    "topic": "Onboarding review",
+    "meeting_time": "2:30 PM"
+  },
+  {
+    "event_id": "evt_009",
+    "customer_id": "cust_nour_002",
+    "event_type": "crm_action_item",
+    "timestamp": "2026-06-25T15:00:00Z",
+    "action": "Verify missing KYC document",
+    "due_date": "2026-06-30"
+  },
+  {
+    "event_id": "evt_010",
+    "customer_id": "cust_nour_002",
+    "event_type": "cross_sell_signal",
+    "timestamp": "2026-06-22T08:10:00Z",
+    "signal": "Salary account balance rising for 3 months",
+    "recommended_product": "home_loan"
+  },
+  {
+    "event_id": "evt_011",
+    "customer_id": "cust_mohamed_003",
+    "event_type": "suspicious_pattern",
+    "timestamp": "2026-06-27T02:13:00Z",
+    "pattern": "Late-night transfer to new counterparty",
+    "amount": 410000,
+    "currency": "EGP",
+    "metadata": {
+      "deviation_multiplier": 6.2
+    }
+  },
+  {
+    "event_id": "evt_012",
+    "customer_id": "cust_mohamed_003",
+    "event_type": "transaction",
+    "timestamp": "2026-06-26T11:11:00Z",
+    "amount": 74000,
+    "currency": "EGP",
+    "direction": "credit",
+    "counterparty": "Alexandria Investments",
+    "channel": "branch",
+    "metadata": {
+      "deviation_multiplier": 1.1
+    }
+  },
+  {
+    "event_id": "evt_013",
+    "customer_id": "cust_mohamed_003",
+    "event_type": "meeting_scheduled",
+    "timestamp": "2026-06-27T16:00:00Z",
+    "topic": "Investment portfolio review",
+    "meeting_time": "4:00 PM"
+  },
+  {
+    "event_id": "evt_014",
+    "customer_id": "cust_mohamed_003",
+    "event_type": "product_expiry",
+    "timestamp": "2026-06-23T00:00:00Z",
+    "product": "revolving_credit",
+    "expiry_date": "2026-08-02",
+    "days_remaining": 36,
+    "renewal_initiated": true
+  },
+  {
+    "event_id": "evt_015",
+    "customer_id": "cust_layla_004",
+    "event_type": "transaction",
+    "timestamp": "2026-06-25T18:25:00Z",
+    "amount": 9800,
+    "currency": "EGP",
+    "direction": "debit",
+    "counterparty": "Mall of Egypt",
+    "channel": "card",
+    "metadata": {
+      "deviation_multiplier": 0.9
+    }
+  },
+  {
+    "event_id": "evt_016",
+    "customer_id": "cust_layla_004",
+    "event_type": "crm_action_item",
+    "timestamp": "2026-06-24T13:00:00Z",
+    "action": "Reactivate dormant savings relationship",
+    "due_date": "2026-07-03"
+  },
+  {
+    "event_id": "evt_017",
+    "customer_id": "cust_layla_004",
+    "event_type": "cross_sell_signal",
+    "timestamp": "2026-06-20T13:00:00Z",
+    "signal": "Stable deposits above EGP 900K",
+    "recommended_product": "home_loan"
+  },
+  {
+    "event_id": "evt_018",
+    "customer_id": "cust_layla_004",
+    "event_type": "suspicious_pattern",
+    "timestamp": "2026-06-18T23:48:00Z",
+    "pattern": "Card attempt from unusual geography",
+    "amount": 17000,
+    "currency": "EGP",
+    "metadata": {
+      "deviation_multiplier": 3.4
+    }
+  },
+  {
+    "event_id": "evt_019",
+    "customer_id": "cust_khaled_001",
+    "event_type": "transaction",
+    "timestamp": "2026-06-21T09:30:00Z",
+    "amount": 500000,
+    "currency": "USD",
+    "direction": "credit",
+    "counterparty": "MENA Trading FZ",
+    "channel": "wire_transfer",
+    "metadata": {
+      "deviation_multiplier": 4.8
+    }
+  },
+  {
+    "event_id": "evt_020",
+    "customer_id": "cust_nour_002",
+    "event_type": "product_expiry",
+    "timestamp": "2026-06-19T00:00:00Z",
+    "product": "debit_card",
+    "expiry_date": "2026-08-15",
+    "days_remaining": 49,
+    "renewal_initiated": false
+  }
+]

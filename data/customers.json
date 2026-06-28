@@ -1,0 +1,98 @@
+[
+  {
+    "customer_id": "cust_khaled_001",
+    "name": "Khaled Al-Sayed",
+    "initials": "KA",
+    "segment": "SME",
+    "tier": "Gold",
+    "rm_id": "rm_sara_001",
+    "joined": "2019-03-15",
+    "account_no": "#00412",
+    "products": ["current_account", "trade_finance", "revolving_credit"],
+    "baseline": {
+      "avg_monthly_spend_egp": 180000,
+      "typical_txn_range_egp": [8000, 25000],
+      "currency_mix": { "EGP": 0.95, "USD": 0.05 },
+      "active_hours": "09:00-18:00",
+      "avg_credit_utilisation_pct": 67
+    },
+    "crm": {
+      "last_contact": "2026-05-14",
+      "last_topic": "renewal discussion",
+      "open_actions": ["Send FX hedging sheet", "Arrange trade finance review"],
+      "next_meeting": "2026-06-30"
+    }
+  },
+  {
+    "customer_id": "cust_nour_002",
+    "name": "Nour Farouk",
+    "initials": "NF",
+    "segment": "Retail",
+    "tier": "Silver",
+    "rm_id": "rm_sara_001",
+    "joined": "2025-11-04",
+    "account_no": "#00389",
+    "products": ["salary_account", "debit_card"],
+    "baseline": {
+      "avg_monthly_spend_egp": 42000,
+      "typical_txn_range_egp": [1000, 9000],
+      "currency_mix": { "EGP": 1.0 },
+      "active_hours": "08:00-22:00",
+      "avg_credit_utilisation_pct": 12
+    },
+    "crm": {
+      "last_contact": "2026-06-09",
+      "last_topic": "onboarding",
+      "open_actions": ["Verify missing KYC document"],
+      "next_meeting": "2026-06-27"
+    }
+  },
+  {
+    "customer_id": "cust_mohamed_003",
+    "name": "Mohamed Ragab",
+    "initials": "MR",
+    "segment": "Corporate",
+    "tier": "Platinum",
+    "rm_id": "rm_sara_001",
+    "joined": "2017-08-21",
+    "account_no": "#00278",
+    "products": ["current_account", "investment_portfolio", "revolving_credit"],
+    "baseline": {
+      "avg_monthly_spend_egp": 950000,
+      "typical_txn_range_egp": [25000, 180000],
+      "currency_mix": { "EGP": 0.78, "USD": 0.22 },
+      "active_hours": "09:00-17:00",
+      "avg_credit_utilisation_pct": 58
+    },
+    "crm": {
+      "last_contact": "2026-06-01",
+      "last_topic": "portfolio rebalance",
+      "open_actions": ["Send revised investment allocation"],
+      "next_meeting": "2026-06-27"
+    }
+  },
+  {
+    "customer_id": "cust_layla_004",
+    "name": "Layla Ibrahim",
+    "initials": "LI",
+    "segment": "Retail",
+    "tier": "Gold",
+    "rm_id": "rm_sara_001",
+    "joined": "2021-01-12",
+    "account_no": "#00331",
+    "products": ["savings_account", "debit_card"],
+    "baseline": {
+      "avg_monthly_spend_egp": 31000,
+      "typical_txn_range_egp": [900, 7000],
+      "currency_mix": { "EGP": 1.0 },
+      "active_hours": "10:00-20:00",
+      "avg_credit_utilisation_pct": 0
+    },
+    "crm": {
+      "last_contact": "2026-03-05",
+      "last_topic": "savings review",
+      "open_actions": ["Reactivate dormant savings relationship"],
+      "next_meeting": null
+    }
+  }
+]
