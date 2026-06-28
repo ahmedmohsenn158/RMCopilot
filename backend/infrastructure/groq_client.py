@@ -11,6 +11,10 @@ load_dotenv(PROJECT_ROOT / ".env", override=True)
 DEFAULT_MODEL = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant").strip()
 
 
+import os
+print(f"[ENV CHECK] GMAIL_ADDRESS={os.getenv('GMAIL_ADDRESS', 'MISSING')}")
+print(f"[ENV CHECK] GMAIL_APP_PASSWORD={'SET' if os.getenv('GMAIL_APP_PASSWORD') else 'MISSING'}")
+
 async def chat_completion(
     system: str,
     user: str,
